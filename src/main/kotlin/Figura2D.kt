@@ -1,8 +1,8 @@
-class Figura2D {
-    fun obliczPole():Double{
+open class Figura2D {
+    open fun obliczPole():Double{
         return 0.0
     }
-    fun obliczObwod():Double{
+    open fun obliczObwod():Double{
         return 0.0
     }
 
