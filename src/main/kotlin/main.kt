@@ -14,6 +14,8 @@ fun main() {
     listaFigur.add(Kolo(5.0))
     listaFigur.add(TrojkatRownoboczny(5.0))
 
+    listaFigur.add(TrojkatProstokatny(10.0,2.0))
+
     for(figura in listaFigur) {
         println("-------------------")
         figura.info()
