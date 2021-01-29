@@ -6,7 +6,7 @@ open class Figura2D {
         return 0.0
     }
 
-    fun info(){
+    open fun info(){
         println("Pole powierzchni wynosi: ${obliczPole()}")
         println("Obwód figury wynosi: ${obliczObwod()}")
     }

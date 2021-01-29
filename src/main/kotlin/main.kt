@@ -12,6 +12,7 @@ fun main() {
     listaFigur.add(Kwadrat(2.0))
 
     listaFigur.add(Kolo(5.0))
+    listaFigur.add(TrojkatRownoboczny(5.0))
 
     for(figura in listaFigur) {
         println("-------------------")
