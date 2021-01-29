@@ -11,15 +11,17 @@ fun main() {
     listaFigur.add(prostokat)
     listaFigur.add(Kwadrat(2.0))
 
+    listaFigur.add(Kolo(5.0))
+
     for(figura in listaFigur) {
         println("-------------------")
         figura.info()
     }
 
     val figura = znajdzNajmniejszePole(listaFigur)
-    println("Najmniejsze znalezione pole: ${figura.obliczPole()}")
-
     val najwiekszaFigura = znajdzNajwiekszePole(listaFigur)
+
+    println("Najmniejsze znalezione pole: ${figura.obliczPole()}")
     println("Największe znalezione pole: ${najwiekszaFigura.obliczPole()}")
 }
 
@@ -35,5 +37,12 @@ fun znajdzNajmniejszePole(listaFigur: MutableList<Figura2D>):Figura2D{
 }
 
 fun znajdzNajwiekszePole(listaFigur: MutableList<Figura2D>):Figura2D{
-    TODO("Funkcja nie została jeszcze zaimplementowana")
+    var figuraTymczasowa = listaFigur[0]
+
+    for(figura in listaFigur){
+        if(figura.obliczPole()>figuraTymczasowa.obliczPole())
+            figuraTymczasowa = figura
+    }
+
+    return figuraTymczasowa
 }
