@@ -1,2 +1,2 @@
-class Trapez : Figura2D() {
+class Trapez() : Figura2D() {
 }
