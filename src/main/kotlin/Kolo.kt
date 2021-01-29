@@ -6,4 +6,9 @@ class Kolo(val r: Double):Figura2D() {
     override fun obliczObwod(): Double {
         return 2*Math.PI*r
     }
+
+    override fun info() {
+        println("Koło")
+        super.info()
+    }
 }
