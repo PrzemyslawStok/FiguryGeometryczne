@@ -1,5 +1,5 @@
 abstract class Figura2D {
-    open fun obliczPole():Double
+    abstract fun obliczPole():Double
     abstract fun obliczObwod():Double
 
     open fun info(){
