@@ -1,2 +1,2 @@
-class SzesciokatForemny : Figura2D{
+class SzesciokatForemny(val a: Double) : Figura2D(){
 }
